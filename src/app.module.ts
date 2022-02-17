@@ -7,9 +7,7 @@ import { FavoritesModule } from './favorites/favorites.module';
   imports: [
     FavoritesModule,
     // refacter to use .env
-    MongooseModule.forRoot(
-      `mongodb+srv://mpwanyi:Af2CA9iVQlDyeFaZ@restapiwithmongo.spews.mongodb.net/favorites?retryWrites=true&w=majority`,
-    ),
+    MongooseModule.forRoot(process.env.MONGO_URL),
   ],
   controllers: [],
   providers: [],
