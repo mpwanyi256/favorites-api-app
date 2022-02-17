@@ -53,7 +53,7 @@ export class FevoritesService {
   ) {
     const foundRepo = await this.favoritesModel.findOne({ repo_id }).exec();
     if (foundRepo) {
-      return new NotAcceptableException('Repo already favorited');
+      return new NotAcceptableException('Sorry, Repo already favorited');
     }
 
     const newFavorite = new this.favoritesModel({

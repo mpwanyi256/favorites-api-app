@@ -1,8 +1,8 @@
 {
-  "name": "agx-api",
+  "name": "favorites-app",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "A simple forites app with mongoDB, typescript & NestJS",
+  "author": "Mpwanyi Samuel",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
